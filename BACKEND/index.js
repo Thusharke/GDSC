@@ -157,7 +157,7 @@ const people = [
   },
 ];
 
-app.get("/localhost:300", (req, res) => {
+app.get("/", (req, res) => {
   res.json(people);
 });
 
