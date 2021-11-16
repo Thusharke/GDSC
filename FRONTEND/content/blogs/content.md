@@ -1,0 +1,36 @@
+---
+blogs:
+  - id: 'post1'
+    title: 'Simple Linear Regression'
+    category: 'Article'
+    date: 'May 5, 2020'
+    datetime: '2020-05-05'
+    shortDesc: 'Linear regression is the simplest form of a classification problem. We have many techniques to do this type of regression. Today we are going to learn how to use the PyTorch API to help us do this classification.'
+    image: 'https://miro.medium.com/max/782/1*s__TPBAazXrNLurjE77bcQ.png'
+    readingTime: '3 min'
+    author:
+      name: 'Srimanth Tenneti'
+      imageUrl: '/team/SrimanthTenneti.jpg'
+  - id: 'post2'
+    title: 'Simple CNN using PyTorch'
+    category: 'Deep Learning'
+    date: 'May 1, 2020'
+    datetime: '2020-05-01'
+    shortDesc: 'This article is a simple guide that will help you build and understand the concepts behind building a simple CNN. By the end of this article you will be able to build a simple CNN based on the PyTorch API and will classify clothing using the FashionMNIST dateset.'
+    image: 'https://miro.medium.com/max/1400/1*Bl-EM5EmdzGEdY34Ex_Ulw.png'
+    readingTime: '4 min'
+    author:
+      name: 'Srimanth Tenneti'
+      imageUrl: '/team/SrimanthTenneti.jpg'
+  - id: 'post3'
+    title: 'Java'
+    category: 'Programming'
+    date: 'July 8, 2020'
+    datetime: '2020-07-08'
+    shortDesc: 'What is Java? Who developed it? What makes it to be different from other languages? What are the benefits of learning Java?'
+    image: 'https://www.zdnet.com/a/img/resize/486cac744ae56e20951ec73a2ebbcb8c7c2ec454/2014/10/05/36793eae-4c32-11e4-b6a0-d4ae52e95e57/java-logo.jpg?width=1200&height=675&fit=crop&auto=webp'
+    readingTime: '4 min'
+    author:
+      name: 'Adil Shaik'
+      imageUrl: '/team/adil.jpeg'
+---
