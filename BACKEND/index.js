@@ -158,6 +158,9 @@ const people = [
 ];
 
 app.get("/", (req, res) => {
+  res.writeHead(200, {
+    "Access-Control-Allow-Origin": "http://localhost:3000",
+  });
   res.json(people);
 });
 

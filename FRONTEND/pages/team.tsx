@@ -165,8 +165,8 @@ const team: React.FC = () => {
   const [people, setPeople] = useState(undefined);
 
   const grabData = async () => {
-    const { data } = await axios.get("/");
-    console.log(data);
+    const res = await axios.get("http://localhost:3001");
+    console.log(res);
   };
 
   useEffect(() => {
