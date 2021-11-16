@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "BACKEND/index.js",
+  "type": "module",
   "scripts": {
     "backend": "nodemon BACKEND/index.js",
-    "frontend": "npm run dev --prefix"
+    "frontend": "npm run dev --prefix FRONTEND",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "repository": {
     "type": "git",
