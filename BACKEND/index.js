@@ -2,6 +2,12 @@ import express from 'express';
 const app = express();
 import team from './data/team.js';
 import cors from 'cors';
+import dotenv from 'dotenv';
+import connectDb from './config/db.js';
+
+dotenv.config();
+
+connectDb();
 
 const corsOptions = {
   origin: 'http://localhost:3000',
@@ -19,7 +25,7 @@ app.get('/api/team', (req, res) => {
   res.json(team);
 });
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, (err) => {
   console.log(`The server is running on port ${PORT}`);

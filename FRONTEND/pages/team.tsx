@@ -11,8 +11,8 @@ const team: React.FC = () => {
 
   useEffect(() => {
     const grabData = async () => {
-      const res = await axios.get('http://127.0.0.1:5000/api/team');
-      console.log(res);
+      const { data } = await axios.get('http://127.0.0.1:5000/api/team');
+      setPeople(data);
     };
 
     grabData();

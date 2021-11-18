@@ -7,7 +7,9 @@
   "scripts": {
     "backend": "nodemon BACKEND/index.js",
     "frontend": "npm run dev --prefix FRONTEND",
-    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "data:import": "node backend/mongoData",
+    "data:destroy": "node backend/mongoData -d"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,8 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13"
   }
 }
