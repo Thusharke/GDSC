@@ -1,5 +1,21 @@
 const team = [
   {
+    name: 'Vijaya Mair',
+    role: 'Placement Co-ordinator and Mentor',
+    image: '/team/vijaya_mair.jpg',
+    instagramUrl: '',
+    githubUrl: '',
+    linkedinUrl: 'https://www.linkedin.com/in/vijayamair/',
+  },
+  {
+    name: 'SeetharamNagesh Appe',
+    role: 'Faculty Co-Ordinator',
+    image: '/team/nagesh.jpg',
+    instagramUrl: '',
+    githubUrl: '',
+    linkedinUrl: 'https://www.linkedin.com/in/seetharamnagesh-appe-4584281aa/',
+  },
+  {
     name: 'Srimanth Tenneti',
     role: 'Community Lead & Machine Learning Lead',
     image: '/team/SrimanthTenneti.jpg',
@@ -7,13 +23,14 @@ const team = [
     githubUrl: 'https://github.com/srimanthtenneti',
     linkedinUrl: 'https://www.linkedin.com/in/srimanth-tenneti-662b7117b/',
   },
+
   {
     name: 'Vaishnavi Tammali',
     role: 'Corporate Outreach Lead',
     image: '/team/vaishnavi.jpeg',
-    instagramUrl: '',
-    githubUrl: '',
-    linkedinUrl: '',
+    instagramUrl: 'https://instagram.com/yshna_we?utm_medium=copy_link',
+    githubUrl: 'https://github.com/VaishnaviTammali',
+    linkedinUrl: 'https://www.linkedin.com/in/vaishnavi-tammali-9a14801b3',
   },
   {
     name: 'P Renu',
@@ -27,9 +44,10 @@ const team = [
     name: 'Sirichandan Reddy',
     role: 'Management Lead',
     image: '/team/sirichandanreddy.JPG',
-    instagramUrl: '',
+    instagramUrl: 'https://www.instagram.com/sirichandan_reddy/',
     githubUrl: '',
-    linkedinUrl: '',
+    linkedinUrl:
+      'https://www.linkedin.com/in/sirichandan-reddy-beeravolu-257b031b5/',
   },
   {
     name: 'Vedanvita Gudavalli',
@@ -122,7 +140,7 @@ const team = [
   {
     name: 'Sandeep P',
     role: 'Android Lead',
-    image: '/team/sandeepprabhakula.jpg',
+    image: '/team/sandeep.jpg',
     instagramUrl: 'https://instagram.com/sandeepo9o7',
     githubUrl: 'https://github.com/sandeep-prabhakula',
     linkedinUrl: 'https://www.linkedin.com/in/sandeep-prabhakula-791769202',
