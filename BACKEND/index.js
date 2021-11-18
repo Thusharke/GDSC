@@ -1,10 +1,10 @@
 import express from "express";
 const app = express();
-import team from './data/team.js';
-import cors from 'cors';
-import dotenv from 'dotenv';
-import connectDb from './config/db.js';
-
+import team from "./data/team.js";
+import cors from "cors";
+import dotenv from "dotenv";
+import connectDb from "./config/db.js";
+import mongoose from "mongoose";
 dotenv.config();
 
 connectDb();
@@ -14,9 +14,6 @@ const corsOptions = {
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
-
-var url = process.env.DATABASEURL || "mongodb://localhost/GDSC";
-mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(cors(corsOptions));
 
@@ -28,7 +25,7 @@ app.get("/api/team", (req, res) => {
   res.json(team);
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = 3001;
 
 app.listen(PORT, (err) => {
   console.log(`The server is running on port ${PORT}`);
