@@ -12,9 +12,8 @@ connectDb();
 
 const importData = async () => {
   try {
-    // await Member.deleteMany();
-    // await Member.insertMany(team);
-
+    await Member.deleteMany();
+    await Member.insertMany(team);
     await Event.deleteMany();
     await Event.insertMany(events);
 
@@ -29,6 +28,7 @@ const importData = async () => {
 const destroyData = async () => {
   try {
     await Member.deleteMany();
+    await Event.deleteMany();
     console.log("Data destroyed");
     process.exit();
   } catch (error) {

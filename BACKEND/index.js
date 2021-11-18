@@ -4,7 +4,7 @@ import team from "./data/team.js";
 import cors from "cors";
 import dotenv from "dotenv";
 import connectDb from "./config/db.js";
-import mongoose from "mongoose";
+import teamRoutes from "./routes/team.js";
 dotenv.config();
 
 connectDb();
@@ -16,13 +16,10 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
+app.use("/api/team", teamRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Running.");
-});
-
-app.get("/api/team", (req, res) => {
-  res.json(team);
+  res.send("Running...");
 });
 
 const PORT = 3001;
