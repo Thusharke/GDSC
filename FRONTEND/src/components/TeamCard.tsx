@@ -12,8 +12,7 @@ interface IProps {
 interface IPerson {
   name: string;
   role: string;
-  imageUrl: string;
-  bio: string;
+  image: string;
   githubUrl: string;
   linkedinUrl: string;
   instagramUrl: string;
@@ -24,7 +23,7 @@ export const TeamCard: React.FC<IProps> = (props) => {
       <div className='aspect-w-3 aspect-h-2'>
         <img
           className='object-cover shadow-lg rounded-lg'
-          src={props.person.imageUrl}
+          src={props.person.image}
           alt='team-image'
         />
       </div>
